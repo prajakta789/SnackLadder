@@ -21,6 +21,10 @@ public class SnackLadder {
 				System.out.println("Player position is ladder");
 				position += diceNumber;
 
+				if (position > 100) {
+					position -= diceNumber;
+				}
+
 			} else if (option == IS_SNAKE) {
 				System.out.println("Player is snack");
 				position -= diceNumber;
